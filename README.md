@@ -44,7 +44,7 @@ The system is composed of four primary microservices that are exposed to the out
 |                        |
 |                        |      +--------------------+      +--------------------------+
 |                        +----->|  Expense Service   |<----|       MySQL DB            |
-|                               | (on Port 9820)     |      |       (Expenses)         |
+|                        |      | (on Port 9820)     |     |       (Expenses)          |
 +-----------+------------+      +--------------------+      +--------------------------+
             ^
             | (e.g., /data-science/v1/message)
