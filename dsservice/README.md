@@ -48,8 +48,8 @@ This service is built using Python and the Flask web framework. It exposes a sin
 |                                                                                        | (4) Extracts data       |
 |                                                                                        | into Pydantic model     |
 |                                                                                        v                         |
-| +---------------------+  (6) Publishes   +--------------------+               +--------------------+             |
-| |   Kafka Producer    <--------------+      JSON Data      <---------------+  |    Expense         |             |
+| +---------------------+  (6) Publishes +--------------------+                 +--------------------+             |
+| |   Kafka Producer    <--------------+ |     JSON Data      <---------------+ |    Expense         |             |
 | +---------------------+   structured   | (Serialized from   |                 | (Pydantic Model)   |             |
 |                                        |  Pydantic model)   |                 +--------------------+             |
 |                                        +--------------------+                                                    |
